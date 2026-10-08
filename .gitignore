@@ -1,0 +1,5 @@
+cuda/
+data/
+*.pkl
+.ipynb_checkpoints/
+*.log
