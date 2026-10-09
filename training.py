@@ -11,7 +11,8 @@ from torch.nn import functional as F
 parser = argparse.ArgumentParser(description='Train the GPT on OpenWebText')
 parser.add_argument('-batch_size', type=int, default=32, help='batch size')
 parser.add_argument('-max_iters', type=int, default=5000, help='training iterations')
-args = parser.parse_args()
+# parse_known_args so chatbot.py can import this module with its own arguments
+args, _ = parser.parse_known_args()
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 print(device)

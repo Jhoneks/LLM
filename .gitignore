@@ -3,3 +3,4 @@ data/
 *.pkl
 .ipynb_checkpoints/
 *.log
+__pycache__/training.cpython-314.pyc
